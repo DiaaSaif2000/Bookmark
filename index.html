@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/brands.min.css">
+    <link rel="stylesheet" href="CSS/BookMarker-style.css">
+    <title>BookMarker</title>
+</head>
+<body cz-shortcut-listen="true">
+    <main class="interface py-5 position-relative">
+    <div class="container d-flex flex-column justify-content-center my-5 mx-auto " >
+        <h1 class="py-2 position-relative text-info text-center">Bookmarker</h1>
+            <hr>
+            <h2 class="text-info text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+              </h2>
+
+        <div class="mb-3">
+
+            <label for="bookmarkName" class="text-info fw-bold site-name w-100 d-flex flex-column justify-content-center">Site Name:
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+            </label>
+
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName" control-id="ControlID-1">
+        </div>
+
+        <div class="site-url w-100 d-flex flex-column justify-content-center mb-3">
+            <label class="text-info fw-bold">Site URL:
+                <i class="fa-solid fa-link"></i>
+            </label>
+            <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL" control-id="ControlID-2">        </div>
+
+        <button onclick="Submit()" class="btn btn-submit px-5" id="submitBtn" control-id="ControlID-3">Submit</button>
+    </div>
+            <hr>
+    <!--Display-->
+
+    <table class="table mt-4 text-center bg-light w-75 mx-auto table">
+        <thead class="text-dark">
+            <th>Index</th>
+            <th>WebsiteName</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </thead>
+    </table>
+</main>
+
+
+
+    <script src="JS/BookMarker-index.js"></script>
+</body>
+</html>
